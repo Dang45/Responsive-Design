@@ -1,0 +1,303 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Css reset section */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*End CSS Reset Section */
+
+/*Start CSS Styling */
+
+html {
+    text-align: center;
+}
+
+.name {
+    color: white;
+    padding: 10%;
+    font-size: 7em;
+}
+
+/*Navigation buttons under name */
+
+.button1 a {
+    font-size: 3em;
+    border: 20px;
+    padding: 10px 85px 10px 85px;
+    width:50px;
+    background: darkcyan;
+    text-decoration:none;
+}
+
+.button2 a {
+    font-size: 3em;
+    border: 20px;
+    padding: 10px 85px 10px 85px;
+    width:50px;
+    background: darkcyan;
+    text-decoration:none;
+}
+
+.button3 a { 
+    font-size: 3em;
+    border: 20px;
+    padding: 10px 70px 10px 70px;
+    width:50px;
+    background: darkcyan;
+    text-decoration:none;
+}
+
+.button4 a {
+    font-size: 3em;
+    border: 20px;
+    padding: 10px 70px 10px 70px;
+    width:50px;
+    background: darkcyan;
+    text-decoration:none;
+}
+
+.box a:hover {
+    background:black;
+    color:white;
+}
+
+/*End of Navigation buttons under name */
+
+/*start middle image */
+
+.container img { 
+    max-width: 100%;
+    border: 2px solid grey;
+}
+
+/* End Middle Image */
+
+/* Start Responsive Code */
+
+@media ( max-width: 1000px) {
+    .button1 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .button2 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .button3 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .button4 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .container img {
+        width: auto;
+    }
+
+    .imageflexbox img {
+        width: 350px;
+    }
+
+    .imageflexbox {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+}
+
+@media ( max-width: 800px) {
+    .button1 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .button2 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .button3 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .button4 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .container img {
+        width: auto;
+    }
+
+    .imageflexbox img {
+        width: 300px;
+    }
+
+    .imageflexbox {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+}
+
+@media (max-width: 500px) {
+    .button1 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .button2 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .button3 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .button4 a {
+        background: hotpink;
+        width: auto;
+    }
+
+    .container img {
+        width: auto;
+    }
+
+    .imageflexbox img {
+        margin: 5%;
+        width: 175px;
+        height: auto;
+    }
+
+    .imageflexbox {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+}
+
+/*End Responsive Code */
+
+/*My Projects Button */
+
+.projectbutton {
+    border: none;
+    color: white;
+    background-color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 70px;
+    margin: 4px 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  /*End My Projects button */
+
+  /* Start Image flex box */
+
+  .imageflexbox {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .imageflexbox img {
+    border-radius: 20%;
+    border: 3px solid black;
+    margin: 5%;
+      
+  }
+
+  .imageflexbox p {
+      color: white;
+      font-size: 30px;
+      margin-bottom: 30px;
+  }
+
+  /* End of Image flex box */
+
+  /*closing section */
+
+  .ending{
+      background: black;
+      padding: 10%;
+  }
+
+  .ending p {
+      color:white;
+      font-size: 50px;
+      margin-bottom: 40px;
+  }
+
+  .contactbutton {
+    border: none;
+    color: black;
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 70px;
+    margin: 4px 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
